@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/jldz9/InSARHub/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9035d6d502ccc2c853820660a0f4a47d39ce7945b3901b87bc064b9fdc18fca4
+  sha256: 9420de7225154ee926b8651dfd9ab0f11b57ea29a1025660b37148d4558ef0d7
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - insarhub = insarhub.cli.main:main
