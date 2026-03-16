@@ -1,5 +1,5 @@
 {% set name = "insarhub" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.0.post1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jldz9/InSARHub/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: bc816441a5e19ae2a12c1a6488de15120bc7cb046fd8498b24938111f57ea91f
+  sha256: 9035d6d502ccc2c853820660a0f4a47d39ce7945b3901b87bc064b9fdc18fca4
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
