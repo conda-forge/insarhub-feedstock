@@ -1,5 +1,5 @@
 {% set name = "insarhub" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/i/insarhub/insarhub-{{ version }}.tar.gz
-  sha256: a309d02386d8f3b55901ec9434daa280c0be6926667058a290f5690929a8178e
+  sha256: 25f0658328d59ae099e347209a0b84aa418367a39720ddccf32a11123f83c88a
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
