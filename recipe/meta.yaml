@@ -1,5 +1,5 @@
 {% set name = "insarhub" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0rc1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/i/insarhub/insarhub-{{ version }}.tar.gz
-  sha256: 38cf2a7ac0d22704e81f564a1ad60fe6f7527eeaf88f2fefa05f8477b3e42686
+  sha256: 2b18531a1f0d46c21ac396324f2e9c2b438e474a8cd12efb3953500c9c0a5266
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -28,22 +28,29 @@ requirements:
     - gdal >=3.8
     - mintpy
     - asf_search
+    - burst2safe
     - cdsapi
     - colorama
     - contextily
+    - dask
     - dem_stitcher
+    - h5py
     - hyp3_sdk
+    - networkx
     - openpyxl
+    - psutil
+    - pyaps3
     - python-multipart
     - fastapi
     - pysolid
     - pygrib
+    - setuptools <81
     - uvicorn
     - rasterio >=1.4
     - sentineleof
     - numpy <2.0
     - imagecodecs <=2026.1.1
-    
+
 
 test:
   requires:
