@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/i/insarhub/insarhub-{{ version }}.tar.gz
-  sha256: 62838db24ff35204b9efe21c5cd1037a0872df80d80c17cfece61fcaea69eb7b
+  sha256: 2b18531a1f0d46c21ac396324f2e9c2b438e474a8cd12efb3953500c9c0a5266
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
